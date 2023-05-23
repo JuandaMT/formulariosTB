@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario Viejuner vs Ladrones</title>
+  </head>
+  <body>
+    <!-- -----------------------------CLUB VIEJUNER--------------------------------- -->
+    <div class="clubViejuner">
+      <form action="">
+        <fieldset>
+          <legend>EL CLUB VIEJUNER</legend>
+          <div class="datosBasicos">
+            INFORMACIÓN BÁSICA
+            <input type="text" placeholder="Nombre" autofocus tabindex="1" />
+            <input type="text" placeholder="Apellidos" tabindex="2" />
+            Introduzca su edad
+            <input type="number" tabindex="3" min="18" max="110" step="1"/>
+          </div>
+          <div class="genero">
+            ELIJA SU GÉNERO
+            <input tabindex="4" type="radio" name="sexo" id="hombre" />
+            <label tabindex="5" for="sexo">Hombre</label>
+            <input tabindex="6" type="radio" name="sexo" id="mujer" />
+            <label tabindex="7" for="sexo">Mujer</label>
+          </div>
+          ¿ERES VIEJUNER?
+          <input
+            tabindex="8"
+            type="radio"
+            name="viejuner"
+            id="viejunerSi"
+          />
+          <label tabindex="9" for="viejunerSi">Sí</label>
+          <input
+            tabindex="10"
+            type="radio"
+            name="viejuner"
+            id="viejunerNo"
+          />
+          <label tabindex="11" for="viejunerNo">No</label>
+          <div class="contacto">
+            CONTACTO
+            <input
+              tabindex="12"
+              type="email"
+              placeholder="Correo electrónico"
+            />
+            <input
+              tabindex="13"
+              type="tel"
+              placeholder="Escriba su número de tlf"
+            />
+          </div>
+        </fieldset>
+        <input tabindex="14" type="submit" />
+        <input tabindex="15" type="reset" value="Limpiar" />
+      </form>
+      <!-- -----------------------------LADRONZUELOS--------------------------------- -->
+    </div>
+    <br />
+    <div class="ladronzuelos">
+      <form action="">
+        <fieldset>
+          <legend>LADRONZUELOS</legend>
+          <label for="fecha">Introduzca la fecha</label>
+          <input type="date" name="fecha" id="fecha" />
+          <label for="hora">Introduzca la hora</label>
+          <input type="time" name="hora" id="hora" />
+          <label for="color">Introduzca el color de la bici</label>
+          <input type="color" name="color" id="color" />
+          <label for="precio">Rango de precio</label>
+          20€ <input type="range" name="rango" id="rango" /> 200€
+
+          <div class="tipoDeBici">
+            <form action="">
+              <label for="tipoBici">Elija su tipo de bici</label>
+              <select name="tipo" id="tipo">
+                <optgroup label="Paseo">
+                  <option value="señorial">Señorial</option>
+                  <option value="anti">Anti-plebeyos</option>
+                  <option value="porEncima">PorEncimaDelHombro</option>
+                </optgroup>
+                <optgroup label="Montaña">
+                  <option value="gamusinos">Gamusinos</option>
+                  <option value="hueleFlores">Huele flores premium</option>
+                  <option value="fango">Fango lover</option>
+                </optgroup>
+                <optgroup label="Carreras">
+                  <option value="metro">Metro y medio</option>
+                  <option value="tres">
+                    3 de la tarde. Fluorescente edition
+                  </option>
+                  <option value="grupitors">Grupitors</option>
+                </optgroup>
+              </select>
+              <div class="accesorios">
+                <br> ACCESORIOS <br>
+                <label for="ruedines">ruedines</label>
+                <input type="checkbox" name="ruedines" id="ruedines">
+                <label for="pegatinas">pegatinas</label>
+                <input type="checkbox" name="pegatinas" id="pegatinas">
+                <label for="cestita">cestita</label>
+                <input type="checkbox" name="cestita" id="cestita">
+                <label for="bomba">bomba de aire</label>
+                <input type="checkbox" name="bomba" id="bomba">
+                <label for="timbre">timbre</label>
+                <input type="checkbox" name="timbre" id="timbre">
+                <label for="foco">foco</label>
+                <input type="checkbox" name="foco" id="foco">
+              </div>
+              <label for="marca">¿QUÉ MARCA ERA?</label>
+              <select name="marca" id="marca">
+                <option value="specialized">specialized</option>
+                <option value="trek">trek</option>
+                <option value="merida">merida</option>
+                <option value="scott">scott</option>
+                <option value="giant">giant</option>
+                <option value="cube">cube</option>
+                <option value="lapierre">lapierre</option>
+                <option value="orbea">orbea</option>
+                <option value="cannondale">cannondale</option>
+                <option value="bmc">bmc</option>
+                <option value="canyon">canyon</option>
+                <option value="look">look</option>
+                <option value="protek">protek</option>
+                <option value="megamo">megamo</option>
+                <option value="pinarello">pinarello</option>
+                <option value="bianchi">bianchi</option>
+                <option value="bh">bh</option>
+                <option value="factor">factor</option>
+                <option value="ghost">ghost</option>
+                <option value="cervélo">cervélo</option>
+                <option value="argon">argon</option>
+              </select>
+            </form>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
