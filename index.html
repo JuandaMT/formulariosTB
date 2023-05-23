@@ -13,36 +13,26 @@
         <fieldset>
           <legend>EL CLUB VIEJUNER</legend>
           <div class="datosBasicos">
-            INFORMACIÓN BÁSICA
+            Información básica
             <input type="text" placeholder="Nombre" autofocus tabindex="1" />
             <input type="text" placeholder="Apellidos" tabindex="2" />
             Introduzca su edad
-            <input type="number" tabindex="3" min="18" max="110" step="1"/>
+            <input type="number" tabindex="3" min="18" max="110" step="1" />
           </div>
           <div class="genero">
-            ELIJA SU GÉNERO
+            Género
             <input tabindex="4" type="radio" name="sexo" id="hombre" />
             <label tabindex="5" for="sexo">Hombre</label>
             <input tabindex="6" type="radio" name="sexo" id="mujer" />
             <label tabindex="7" for="sexo">Mujer</label>
           </div>
-          ¿ERES VIEJUNER?
-          <input
-            tabindex="8"
-            type="radio"
-            name="viejuner"
-            id="viejunerSi"
-          />
+          ¿Eres Viejuner?
+          <input tabindex="8" type="radio" name="viejuner" id="viejunerSi" />
           <label tabindex="9" for="viejunerSi">Sí</label>
-          <input
-            tabindex="10"
-            type="radio"
-            name="viejuner"
-            id="viejunerNo"
-          />
+          <input tabindex="10" type="radio" name="viejuner" id="viejunerNo" />
           <label tabindex="11" for="viejunerNo">No</label>
           <div class="contacto">
-            CONTACTO
+           Info de Contacto
             <input
               tabindex="12"
               type="email"
@@ -58,8 +48,8 @@
         <input tabindex="14" type="submit" />
         <input tabindex="15" type="reset" value="Limpiar" />
       </form>
-      <!-- -----------------------------LADRONZUELOS--------------------------------- -->
-    </div>
+    </div>  
+    <!-- -----------------------------LADRONZUELOS--------------------------------- -->
     <br />
     <div class="ladronzuelos">
       <form action="">
@@ -69,7 +59,9 @@
           <input type="date" name="fecha" id="fecha" />
           <label for="hora">Introduzca la hora</label>
           <input type="time" name="hora" id="hora" />
+          <br />
           <label for="color">Introduzca el color de la bici</label>
+          <br />
           <input type="color" name="color" id="color" />
           <label for="precio">Rango de precio</label>
           20€ <input type="range" name="rango" id="rango" /> 200€
@@ -97,21 +89,23 @@
                 </optgroup>
               </select>
               <div class="accesorios">
-                <br> ACCESORIOS <br>
+                <br />
+                Accesorios: <br />
                 <label for="ruedines">ruedines</label>
-                <input type="checkbox" name="ruedines" id="ruedines">
+                <input type="checkbox" name="ruedines" id="ruedines" />
                 <label for="pegatinas">pegatinas</label>
-                <input type="checkbox" name="pegatinas" id="pegatinas">
+                <input type="checkbox" name="pegatinas" id="pegatinas" />
                 <label for="cestita">cestita</label>
-                <input type="checkbox" name="cestita" id="cestita">
+                <input type="checkbox" name="cestita" id="cestita" />
                 <label for="bomba">bomba de aire</label>
-                <input type="checkbox" name="bomba" id="bomba">
+                <input type="checkbox" name="bomba" id="bomba" />
                 <label for="timbre">timbre</label>
-                <input type="checkbox" name="timbre" id="timbre">
+                <input type="checkbox" name="timbre" id="timbre" />
                 <label for="foco">foco</label>
-                <input type="checkbox" name="foco" id="foco">
+                <input type="checkbox" name="foco" id="foco" />
               </div>
-              <label for="marca">¿QUÉ MARCA ERA?</label>
+              <br />
+              <label for="marca">¿Qué marca era?</label>
               <select name="marca" id="marca">
                 <option value="specialized">specialized</option>
                 <option value="trek">trek</option>
@@ -138,7 +132,9 @@
             </form>
           </div>
         </fieldset>
-      </form>
+      <input type="submit"/>
+      <input type="reset" value="Limpiar"/>
+    </form>
     </div>
   </body>
 </html>
