@@ -10,8 +10,8 @@
     <!-- -----------------------------CLUB VIEJUNER--------------------------------- -->
     <div class="clubViejuner">
       <form action="">
-        <fieldset>
-          <legend>EL CLUB VIEJUNER</legend>
+        <fieldset id="primerForm">
+          <legend class="legenda">EL CLUB VIEJUNER</legend>
           <div class="datosBasicos">
             Información básica
             <input type="text" placeholder="Nombre" autofocus tabindex="1" />
@@ -26,48 +26,60 @@
             <input tabindex="6" type="radio" name="sexo" id="mujer" />
             <label tabindex="7" for="sexo">Mujer</label>
           </div>
-          ¿Eres Viejuner?
-          <input tabindex="8" type="radio" name="viejuner" id="viejunerSi" />
-          <label tabindex="9" for="viejunerSi">Sí</label>
-          <input tabindex="10" type="radio" name="viejuner" id="viejunerNo" />
-          <label tabindex="11" for="viejunerNo">No</label>
+          <div class="viejunerSIoNo">
+            ¿Eres Viejuner?
+            <input tabindex="8" type="radio" name="viejuner" id="viejunerSi" />
+            <label tabindex="9" for="viejunerSi">Sí</label>
+            <input tabindex="10" type="radio" name="viejuner" id="viejunerNo" />
+            <label tabindex="11" for="viejunerNo">No</label>
+          </div>
           <div class="contacto">
-           Info de Contacto
+            <br />
+            Contacto <br />
+            <label for="email">Introduzca su email</label>
             <input
+              id="email"
+              name="email"
               tabindex="12"
               type="email"
-              placeholder="Correo electrónico"
+              placeholder="miemail@gmail.com"
             />
+            <br />
+            <label for="telefono">Escriba su número de teléfono</label>
             <input
+              name="telefono"
+              id="telefono"
               tabindex="13"
               type="tel"
-              placeholder="Escriba su número de tlf"
+              placeholder="123456789"
             />
           </div>
         </fieldset>
         <input tabindex="14" type="submit" />
         <input tabindex="15" type="reset" value="Limpiar" />
       </form>
-    </div>  
+    </div>
     <!-- -----------------------------LADRONZUELOS--------------------------------- -->
     <br />
     <div class="ladronzuelos">
       <form action="">
-        <fieldset>
-          <legend>LADRONZUELOS</legend>
-          <label for="fecha">Introduzca la fecha</label>
-          <input type="date" name="fecha" id="fecha" />
-          <label for="hora">Introduzca la hora</label>
-          <input type="time" name="hora" id="hora" />
-          <br />
-          <label for="color">Introduzca el color de la bici</label>
-          <br />
-          <input type="color" name="color" id="color" />
-          <label for="precio">Rango de precio</label>
-          20€ <input type="range" name="rango" id="rango" /> 200€
-
-          <div class="tipoDeBici">
-            <form action="">
+        <fieldset id="segundoForm">
+          <legend class="legenda">LADRONZUELOS</legend>
+          <div class="fechaYHora">
+            <label for="fecha">Introduzca la fecha</label>
+            <input type="date" name="fecha" id="fecha" />
+            <label for="hora">Introduzca la hora</label>
+            <input type="time" name="hora" id="hora" />
+          </div>
+          <div class="datosBici">
+            <br />
+            <label for="color">Introduzca el color de la bici</label>
+            <input type="color" name="color" id="color" />
+            <br />
+            <label for="precio">Rango de precio</label>
+            20€ <input type="range" name="rango" id="rango" /> 200€ <br />
+            <br />
+            <div class="tipoBici">
               <label for="tipoBici">Elija su tipo de bici</label>
               <select name="tipo" id="tipo">
                 <optgroup label="Paseo">
@@ -88,53 +100,51 @@
                   <option value="grupitors">Grupitors</option>
                 </optgroup>
               </select>
-              <div class="accesorios">
-                <br />
-                Accesorios: <br />
-                <label for="ruedines">ruedines</label>
-                <input type="checkbox" name="ruedines" id="ruedines" />
-                <label for="pegatinas">pegatinas</label>
-                <input type="checkbox" name="pegatinas" id="pegatinas" />
-                <label for="cestita">cestita</label>
-                <input type="checkbox" name="cestita" id="cestita" />
-                <label for="bomba">bomba de aire</label>
-                <input type="checkbox" name="bomba" id="bomba" />
-                <label for="timbre">timbre</label>
-                <input type="checkbox" name="timbre" id="timbre" />
-                <label for="foco">foco</label>
-                <input type="checkbox" name="foco" id="foco" />
-              </div>
+            </div>
+            <div class="accesorios">
               <br />
-              <label for="marca">¿Qué marca era?</label>
-              <select name="marca" id="marca">
-                <option value="specialized">specialized</option>
-                <option value="trek">trek</option>
-                <option value="merida">merida</option>
-                <option value="scott">scott</option>
-                <option value="giant">giant</option>
-                <option value="cube">cube</option>
-                <option value="lapierre">lapierre</option>
-                <option value="orbea">orbea</option>
-                <option value="cannondale">cannondale</option>
-                <option value="bmc">bmc</option>
-                <option value="canyon">canyon</option>
-                <option value="look">look</option>
-                <option value="protek">protek</option>
-                <option value="megamo">megamo</option>
-                <option value="pinarello">pinarello</option>
-                <option value="bianchi">bianchi</option>
-                <option value="bh">bh</option>
-                <option value="factor">factor</option>
-                <option value="ghost">ghost</option>
-                <option value="cervélo">cervélo</option>
-                <option value="argon">argon</option>
-              </select>
-            </form>
+              Accesorios:
+              <br />
+              <label for="ruedines">ruedines</label>
+              <input type="checkbox" name="ruedines" id="ruedines" />
+              <label for="pegatinas">pegatinas</label>
+              <input type="checkbox" name="pegatinas" id="pegatinas" />
+              <label for="cestita">cestita</label>
+              <input type="checkbox" name="cestita" id="cestita" />
+              <label for="bomba">bomba de aire</label>
+              <input type="checkbox" name="bomba" id="bomba" />
+              <label for="timbre">timbre</label>
+              <input type="checkbox" name="timbre" id="timbre" />
+              <label for="foco">foco</label>
+              <input type="checkbox" name="foco" id="foco" />
+            </div>
+            <br />
+            <div class="marca">
+              <label for="elijaMarca">¿De qué marca es su bici?</label>
+              <input list="elijaMarca" name="marca" id="marca" />
+              <datalist id="elijaMarca">
+                <option value="specialized"></option>
+                <option value="trek"></option>
+                <option value="merida"></option>
+                <option value="scott"></option>
+                <option value="giant"></option>
+                <option value="cube"></option>
+                <option value="lapierre"></option>
+                <option value="cannondale"></option>
+                <option value="bmc"></option>
+                <option value="canyon"></option>
+                <option value="look"></option>
+                <option value="protek"></option>
+                <option value="megamo"></option>
+                <option value="pinarello"></option>
+                <option value="bh"></option>
+              </datalist>
+            </div>
           </div>
         </fieldset>
-      <input type="submit"/>
-      <input type="reset" value="Limpiar"/>
-    </form>
+        <input type="submit" />
+        <input type="reset" value="Limpiar" />
+      </form>
     </div>
   </body>
 </html>
